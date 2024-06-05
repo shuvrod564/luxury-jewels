@@ -16,4 +16,4 @@ Feel free to check out my repositories and connect with me!
 > Technologies used: html5, css3, javascript, scss, and php
 
 
-Demo:  
+Demo: https://luxury-jewel.suvroweb.com/
