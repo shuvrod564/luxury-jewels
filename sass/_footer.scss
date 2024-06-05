@@ -1,0 +1,93 @@
+ 
+footer {     
+    padding: 3rem 0 0rem 0; 
+    background-color: #f2f2f2;
+
+    .info__card {
+        .icon {
+            width: 2.5rem;
+        }
+    }
+     
+    a { 
+        color: var(--dark);text-transform: capitalize;opacity: .8;
+        background: linear-gradient(to bottom, var(--secondary) 0%, var(--secondary) 98%);
+        background-size: 0% 1px;background-repeat: no-repeat;
+        background-position: 0% 100%;    
+       
+        &:hover { 
+            color: var(--secondary);background-size: 100% 1px;opacity: 1;
+        } 
+    } 
+
+    .instagram__btn {
+        width: 3rem;height: 3rem;background-color: var(--dark);color: var(--white);
+        transition: all .3s ease-in-out;
+
+        &:hover, &:focus, &:active {
+            background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100% );
+            text-decoration: none;color: var(--white);
+        }
+    }
+ 
+}
+
+.social__links { 
+    li {
+        margin-bottom: 0; 
+        a {
+            width: 2.5rem;
+            height: 2.5rem;border-radius: 3px;
+            background-color: var(--white); 
+
+            svg { width: 1.2rem;height: 1.2rem; }
+
+            &:hover, &:focus {
+                background-color: var(--dark);color: var(--white);
+
+                svg {
+                    fill: white;
+                }
+            }
+        } 
+    }
+    &.footer {
+        li a {
+            background-color: var(--dark);
+            &:hover, &:focus {
+                background-color: var(--brand);color: var(--white);
+            }
+        }
+    }
+}
+
+/*---------------------- Back to Top Css --------------*/ 
+.backTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;min-height: auto;
+    height: 3.5rem;padding: 0 0 0 0;
+    background-color: var(--white);
+    z-index: 999; 
+    display: none;border: 2px solid var(--white); 
+    justify-content: center; 
+  
+    &.show {
+        display: flex;
+    }
+}
+ 
+ 
+ 
+
+@media (max-width: 575.99px) {
+    footer {
+        
+
+        .logo img { max-height: 4rem;width: auto; }
+
+       
+       
+    }
+}
